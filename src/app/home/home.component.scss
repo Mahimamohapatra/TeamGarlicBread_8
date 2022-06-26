@@ -136,6 +136,8 @@ mat-card {
   background-position: right top;
   margin-top: 12%;
   margin-left: 9%;
+  outline: none;
+  text-decoration: none;
 
   mat-card-title {
     margin: 10px 0 20px 0;
@@ -171,7 +173,7 @@ mat-card {
   }
 
   img {
-    width: 50%;
+    width: 52%;
     height: 50%;
     transition: none 0s ease 0s;
     text-align: inherit;

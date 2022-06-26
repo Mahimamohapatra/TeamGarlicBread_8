@@ -1,0 +1,21 @@
+<div class="pt-3 pb-2 mb-3 border-bottom">
+  <h2 class="h2">Book Your Ticket</h2>
+</div>
+
+
+<form [formGroup]="bookingForm" (ngSubmit)="submitVisitorData()">
+  <div class="row">
+    <div class="col-lg-5 col-md-12 col-sm-12">
+      <div class="row">
+        <div class="col-md-12 mb-3">
+          <input type="text" class="form-control" formControlName="name" name="name" placeholder="name"  required>
+          <input type="email" class="form-control" formControlName="email" name="email" placeholder="email" required>
+          <input type="text" class="form-control" formControlName="phone" name="phone" placeholder="phone number" required>
+          <input id="requestdate" type="date" formControlName="date" name="date" class="form-control" required>
+          <input type="text" class="form-control" formControlName="ticketSize" name="ticketSize" placeholder="Number of Tickets" required>
+          <button class="btn btn-primary" [disabled]="!bookingForm.valid">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
